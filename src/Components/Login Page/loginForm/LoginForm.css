@@ -1,0 +1,36 @@
+.LoginForm {
+	flex: 1;
+	/* border: 1px solid black; */
+	padding: 15px 35px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.LoginForm > section {
+	padding: 0px 20px;
+}
+.LoginForm section:first-child {
+	margin-bottom: 10px;
+}
+.LoginForm section:nth-child(1) img {
+	margin-left: -18px;
+	margin-bottom: 5px;
+}
+.LoginForm section:nth-child(1) p {
+	font-size: 22px;
+}
+
+.LoginForm section > form input[type="text"],
+.LoginForm section > form input[type="password"] {
+	display: block;
+	width: 100%;
+	height: 60px;
+	border: none;
+	border-bottom: 4px solid #002753;
+	background-color: #f8f8f8;
+	font-size: 18px;
+	padding: 0px 8px;
+	margin: 20px 0px;
+	font-family: "Roboto";
+}

@@ -1,0 +1,43 @@
+.login_wrapper {
+	/* width: 960px; */
+	min-width: 960px;
+	margin: 0px auto;
+	/* border: 1px solid black; */
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	cursor: pointer;
+	padding: 8px;
+	width: 150px;
+	height: 50px;
+	border: none;
+	background: #002753;
+	color: white;
+	font-size: 18px;
+	margin-right: 20px;
+	margin-top: 20px;
+	border-radius: 5px;
+}
+
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	background: #001d3f;
+	color: white;
+}
+
+.loginAction {
+	flex: 1;
+	max-height: 100%;
+	min-height: 100%;
+	display: flex;
+}
+.loginAction > * {
+	max-height: 100%;
+	min-height: 100%;
+}

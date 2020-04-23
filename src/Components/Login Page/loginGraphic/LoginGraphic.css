@@ -1,0 +1,66 @@
+.LoginGraphic{
+    flex: 1.2;
+    /* border: 1px solid black; */
+    padding: 15px;
+    background: url("/assets/LoginPage/Svg/LoginGraphic.svg");
+    background-size: cover;
+    /* border-radius: 10px; */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.LoginGraphic_Content{
+    max-width: 60%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-top: -140px;
+}
+
+.LoginGraphic_Content img{
+    margin-bottom: 10px;
+    width: fit-content;
+}
+.LoginGraphic_Content p{
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+.LoginGraphic_Content > section{
+    margin-top: 30px;
+}
+
+.LoginGraphic_Content > section input[type="button"]
+{
+    background: #fff;
+    color: #002753;
+}
+
+.LoginGraphic_Content > section input[type="button"]:hover{
+    background: #001d3f;
+    color: white;
+}
+
+
+.loginSocials{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.social_icons{
+    display: flex;
+    justify-content: space-around;
+}
+.social_icons > *{
+    cursor: pointer;
+}
+
+.loginSocials p {
+    font-size: 18px;
+}

@@ -1,0 +1,12 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    font-weight: normal;
+}
+
+
+.app_wrapper{
+    height: 100vh;
+}
