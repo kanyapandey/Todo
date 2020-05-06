@@ -1,0 +1,2 @@
+export const CURRENT_ROUTE = "CURRENT_ROUTE";
+export const CURRENT_USER_SET = "CURRENT_USER_SET";
