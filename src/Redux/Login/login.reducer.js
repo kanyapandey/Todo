@@ -1,4 +1,4 @@
-import { CURRENT_ROUTE, CURRENT_USER_SET } from './login.actiontype';
+import { CURRENT_ROUTE, CURRENT_USER_SET, CURRENT_USER_SET_DATA } from './login.actiontype';
 import { combineReducers } from 'redux';
 
 const inititalRouteState = {
@@ -7,7 +7,11 @@ const inititalRouteState = {
 const inititalUserState = {
     currUser: {}
 }
-
+const inititalUserDataState = {
+    currFullName: "",
+    currUserName: "",
+    currPassword: ""
+}
 
 
 function loginReducer(state = inititalRouteState, action) {
@@ -35,5 +39,18 @@ function loginCurrentUser(state = inititalUserState, action) {
     }
 }
 
+function signupCurrentUserData(state = inititalUserDataState, action) {
+    switch (action.type) {
+        case CURRENT_USER_SET_DATA:
+            return {
+                ...state,
+                currFullName: action.currFullName ? action.currFullName : "Unset",
+                currUserName: action.currUserName ? action.currUserName : "Unset",
+                currPassword: action.currPassword ? action.currPassword : "Unset"
+            };
+        default:
+            return state;
+    }
+}
 
-export const rootReducer = combineReducers({loginReducer, loginCurrentUser});
+export const rootReducer = combineReducers({ loginReducer, loginCurrentUser, signupCurrentUserData});

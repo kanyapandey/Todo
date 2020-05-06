@@ -20,9 +20,9 @@ function LoginGraphic(props) {
                 </p>
 
                 <section>
-                    <p>{props.route === "/Signup" ? "Already a user ? Login here" : "New user ? Make a profile here"}</p>
-                    {props.route == "/Signup" ? <Redirect to="/" /> : <Redirect to="Signup" />}
-                    <input type="button" onClick={checkRoute} value={props.route === "/Signup" ? "Login" : "Signup"} id="login-btn" />
+                    <p>{props.route === "/" ? "Already a user ? Login here" : "New user ? Make a profile here"}</p>
+                    {props.route == "/" ? <Redirect to="/Signup" /> : <Redirect to="/" />}
+                    <input type="button" onClick={checkRoute} value={props.route === "/" ? "Login" : "Signup"} id="login-btn" />
                 </section>
 
                 <section className="loginSocials">
@@ -42,7 +42,6 @@ function LoginGraphic(props) {
 
 
 function mapStateToProps(state) {
-    console.log(state);
     return {
         route: state.loginReducer.currRoute
     };
